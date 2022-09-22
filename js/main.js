@@ -3,7 +3,6 @@ const encabezados = document.querySelectorAll('.section-container .encabezado');
 const enlaces = document.querySelectorAll('.enlaces a')
 console.log(enlaces);
 
-
 const observer = new IntersectionObserver((entradas , observaador)=>{
   entradas.forEach(entrada=>{
       if(entrada.isIntersecting){
@@ -25,10 +24,10 @@ const observer = new IntersectionObserver((entradas , observaador)=>{
   threshold:1,
   rootMargin:'0px',
 });
-
 encabezados.forEach((encabezado)=>{
   observer.observe(encabezado);
 });
+
 
 
 const typed = new Typed('.typed',{
@@ -37,6 +36,8 @@ const typed = new Typed('.typed',{
   backSpeed:20,
   loop:true,
 });
+
+
 
   anime({
     targets:'.logo',

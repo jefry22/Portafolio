@@ -8,17 +8,17 @@
 html{
     scroll-behavior: smooth;
 }
+/* Variables Generales */
 :root{
     --color-black:#222222;
+    --color-secundary:#dc3545;
     --text-color-primary:#FFFFFF;
-    --text-color-secundary:#dc3545;
     --color-border:rgb(234, 234, 234);
     --color-bg-secundary:rgb(218, 218, 218);
-    --font-size-sm:16px;
-    --font-size-md:18px;
+    --font-size-sm:12px;
+    --font-size-md:16px;
     --font-size-lg:32px;
     --font-size-xl:64px;
-    --font-size-xxl:85px;
 }
 /* Estilos Generales */
 p::selection,
@@ -27,14 +27,14 @@ h3::selection,
 h2::selection
 {
     color: var(--text-color-primary);
-    background-color: var(--text-color-secundary);
+    background-color: var(--color-secundary);
 }
 .container{
     display: flex;
     width: 100%;
 }
 .activo{
-    color: var(--text-color-secundary);
+    color: var(--color-secundary);
 }
 body{
     font-family: 'Quicksand', sans-serif;
@@ -45,58 +45,23 @@ ul{
 a{
     text-decoration: none;
 }
+.section-container{
+    width: 100%;
+}
 
 /* Sidebar Navegación */
 .sidebar{
     position: sticky;
     top: 0px;
-    width: 420px;
+    width: 350px;
     height: 100vh;
     background-color:var(--color-black);
 }
 .main-container{
-    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;    
-    height: 80vh;
-    margin-top: 40px;
 }
-.section-container{
-    width: 100%;
-}
-/* Perfil Profile */
-.perfil{
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-.perfil p:nth-child(3) {
-    color: var(--color-border);
-    font-weight: 400;
-    margin-top: 10px;
-    font-size: var(--font-size-sm);
-}
-.perfil p{
-    color: var(--text-color-primary);
-    font-size: var(--font-size-md);
-}
-.perfil-photo{
-    width: 120px;
-    margin: 20px 0px;
-    height: 120px;
-    background-image: url("../img/80290606_2688262541241911_4132282224114401280_n.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-color: var(--text-color-secundary);
-    border-radius: 50%;
-    border: 5px solid var(--color-border);
-}
-
-/* Enlaces sidebar */
 .enlaces ul li{
     padding: 12px;
 }
@@ -105,9 +70,42 @@ a{
     color: var(--text-color-primary);
 }
 .enlaces ul li a:hover{
-    color: var(--text-color-secundary);
+    color: var(--color-secundary);
 }
-/* Section Container */
+
+
+/* Perfil Profile */
+.perfil{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.perfil p{
+    color: var(--text-color-primary);
+    font-size: var(--font-size-md);
+}
+.perfil p:nth-child(3) {
+    color: var(--color-border);
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: var(--font-size-sm);
+}
+.perfil-photo{
+    width: 120px;
+    margin: 20px 0px;
+    height: 120px;
+    background: url("../img/80290606_2688262541241911_4132282224114401280_n.jpg"),center center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 5px solid var(--color-border);
+}
+/* FIN DE SIDEBAR */
+
+
+
+/* SECTION INICIO*/
 .home-area{
     width: 100%;
     height: 100vh;
@@ -127,16 +125,16 @@ a{
 }
 .title-name .name{
     color: var(--text-color-primary);
-    font-size: var(--font-size-xxl);
+    font-size: var(--font-size-xl);
 }
 .color-name{
-    color: var(--text-color-secundary);
+    color: var(--color-secundary);
 }
 .title-name{
     text-align: center;
 }
 .logo{
-    width: 220px;
+    width: 180px;
     margin: 0;
 }
 .work-description{
@@ -149,35 +147,27 @@ a{
 /* Section Container About */
 .section-about-container{
     width: 100%;
-    /* background-color: #636363; */
-    padding: 20px;
-    margin-bottom: 30px;
+    padding-left: 40px;
+    padding-bottom: 40px;
 }
 .section-about-title{
     width: 100%;
-    padding: 20px 0px;
-    /* background-color: orange; */
+    padding: 40px 0px;
 }
 .section-about-title >h2{
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-lg);
     margin: 10px 0;
     font-weight: bold;
 }
 .section-about-title p{
     font-size: var(--font-size-md);
 }
-/* About Description Container*/
 .container-about{
-    /* width: 100%; */
-    /* margin:20px 20px; */
     display: flex;
-    /* background-color: #636363; */
 }
-/* About Profile */
 .profile-about-photo{
-    height: 620px;
-    width: 35%;
-    margin-right: 20px;
+    height: 520px;
+    width: 40%;
     border: 2px solid var(--color-border);
     border-radius: 5px;
     display: flex;
@@ -186,28 +176,29 @@ a{
 }
 .profile-about-photo img{
     width: 98%;
-    height: 98%;
+    height: 99%;
     object-fit: cover;
     object-position: center;
 }
+
+
 /* About Description  */
 .profile-about-description{
-    width: 60%;
+    width: 55%;
+    padding-left: 15px;
 }
 .about-description{
     width: 100%;
-    margin-bottom: 20px;
-    /* background-color: #222222; */
     border-bottom: 3px solid var(--color-border);
+    margin-bottom: 20px;
 }
 .about-description h3{
     font-size: var(--font-size-lg);
-    margin-bottom: 20px;
     font-weight: 400;
-    color: var(--text-color-secundary);
+    color: var(--color-secundary);
 }
 .about-description p:nth-child(2){
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-);
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -216,35 +207,19 @@ a{
     font-size: var(--font-size-md);
     margin-bottom: 20px;
 }
-
-
-/* Data */
-
 .data{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    /* background-color: #dc3545; */
-    gap: 10px;
+    width: 100%;
 }
 .data p{
     font-size: var(--font-size-md);
     padding: 10px;
     font-weight: bold;
+    color: var(--color-secundary);
 }
 .data small{
     font-size: var(--font-size-md);
     font-weight: 400;
-}
-.btn-info{
-    margin-top: 20px;
-    display: flex;
-}
-
-.btn-cv{
-    margin-right: 40px;
-    background-color: var(--text-color-secundary);
-    color: var(--text-color-primary);
-    border: none;
+    color: var(--color-black);
 }
 .btn{
     padding: 10px;
@@ -254,27 +229,37 @@ a{
     font-size: var(--font-size-md);
     border-radius: 80px;
 }
+.btn-cv{
+    margin-right: 40px;
+    background-color: var(--color-secundary);
+    color: var(--text-color-primary);
+    border: none;
+}
+
 
 /* Container Estudios */
 .container-section-estudios{
     width: 100%;
-    padding: 20px;
+    padding-left:40px;
+    padding-bottom: 40px;
     display: grid;
     background-color: var(--color-border);
 }
 .section__estudios-container{
-    width: 100%;
+    width: 95%;
     display: grid;
-    gap: 20px;
+    gap: 30px;
     margin-top: 20px;
     grid-template-columns: repeat(3,1fr);
 }
-
 .section__estudios_title h2{
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-lg);
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 .section__estudios_title p{
     font-size: var(--font-size-md);
+    padding-bottom: 20px;
 }
 .scene{
     width: 100%;
@@ -297,7 +282,6 @@ a{
     position: absolute;
     width: 100%;
     height: 100%;
-    /* text-align: center; */
     backface-visibility: hidden;
 }
 .card__face--front{
@@ -307,21 +291,19 @@ a{
     align-items: center;
 }
 .icons{
-    color: var(--text-color-secundary);
-    font-size: var(--font-size-xxl);
+    color: var(--color-secundary);
+    font-size: var(--font-size-xl);
 }
 .card__face--back{
-    background-color: #dc3545;
+    background-color: var(--color-black);
     transform: rotateY(180deg);
     width: 100%;
 }
 .card__face--back ul{
     margin-top: 10px;
-    list-style: decimal;
+    font-size: var(--font-size-sm);
     color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 .card__face--back li{
     margin-bottom: 10px;
@@ -332,8 +314,24 @@ a{
 }
 .card__face--back p{
     text-align: center;
-    color: var(--text-color-primary);
+    color: rgb(14, 229, 68);
 }
 .card:hover .card__face--front{transform: rotateY(180deg);}
 
 .card:hover .card__face--back{transform: rotateY(360deg);}
+
+
+.container-section-portfolio{
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.title-section-portfolio{
+    padding: 20px 0px;
+}
+.card-container{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2,420px);
+    gap: 20px;
+}
