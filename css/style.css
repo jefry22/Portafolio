@@ -30,7 +30,6 @@ h2::selection
     background-color: var(--color-secundary);
 }
 .container-principal{
-    /* display: flex; */
     width: 100%;
 }
 .container{
@@ -149,8 +148,7 @@ a{
 /* Section Container About */
 .section-about-container{
     width: 100%;
-    padding-left: 40px;
-    padding-bottom: 40px;
+    padding: 40px 40px;
 }
 .section-about-title{
     width: 100%;
@@ -165,11 +163,11 @@ a{
     font-size: var(--font-size-md);
 }
 .container-about{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
 }
 .profile-about-photo{
-    height: 520px;
-    width: 40%;
+    width: 100%;
     border: 2px solid var(--color-border);
     border-radius: 5px;
     display: flex;
@@ -186,7 +184,7 @@ a{
 
 /* About Description  */
 .profile-about-description{
-    width: 55%;
+    width: 100%;
     padding-left: 15px;
 }
 .about-description{
@@ -195,6 +193,7 @@ a{
     margin-bottom: 20px;
 }
 .about-description h3{
+    margin-top: 10px;
     font-size: var(--font-size-lg);
     font-weight: 400;
     color: var(--color-secundary);
@@ -375,7 +374,7 @@ input{
     width: 50%;
 }
 .txt-email{
-    width: 49.5%;
+    width: 49%;
 }
 .txt-subject{
     width: 100%;
@@ -451,4 +450,28 @@ footer{
     color: var(--text-color-primary);
     font-weight: 300;
     font-size: var(--font-size-sm);
+}
+
+@media(max-width:836px) {
+    .sidebar{
+      display: none;  
+    }
+    .container-principal{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .section-container{
+        width: 100%;
+    }
+    .logo{
+        width: 105px;
+    }
+    .title-name .name{
+        font-size: var(--font-size-lg);
+    }
+    .work-description{
+        font-size: var(--font-size-md);
+    }
 }
