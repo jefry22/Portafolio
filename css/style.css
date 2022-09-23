@@ -474,4 +474,19 @@ footer{
     .work-description{
         font-size: var(--font-size-md);
     }
+    .footer-contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .btnf{
+        margin: 0;
+    }
+    .card__face--back a{
+    pointer-events: none;
+    }
+    .footer-redes{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
 }
