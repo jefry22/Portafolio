@@ -58,3 +58,11 @@ const typed = new Typed('.typed',{
     },
     delay:250
   });
+
+  const btn_menu = document.querySelector('#btn-menu')
+  const div_mobile = document.querySelector('#nav-mobile');
+
+  // const 
+  btn_menu.addEventListener('click',function(){
+      div_mobile.classList.toggle('active')
+  })
