@@ -386,16 +386,8 @@ a{
     opacity: .6;
 
 }
-.btnvermas{
-    position: absolute;
-    right: 50%;
-    top: 50%;
-}
-.card-container .card__face--back p{
-    color: #dc3545;
-    font-size: var(--font-size-md);
-    font-weight: bold;
-}
+
+
 /* SECTION FORM */
 .container-section-contact{
     background-color: var(--color-border);
