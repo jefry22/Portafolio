@@ -585,8 +585,8 @@ footer{
         margin: 0;
         margin-left: 10px;
     }
-    .card__face--back a{
-    pointer-events: none;
+    /* .card__face--back a{
+    pointer-events: none; */
     }
     .footer-redes{
         margin-top: 20px;
