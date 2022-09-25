@@ -60,6 +60,7 @@ a{
     width: 30%;
     height: 100vh;
     background-color:var(--color-black);
+    box-shadow: 1px 0px 1px 1px rgba(6, 6, 6, 0.516)
 }
 .main-container{
     display: flex;
@@ -113,6 +114,37 @@ a{
     width: 100%;
     height: 100vh;
     background-color: var(--color-black);
+    position: relative;
+}
+.btntheme{
+    position: absolute;
+    border-radius: 20px;
+    width: 120px;
+    background-color: var(--text-color-primary);
+    height: 40px;
+    top: 10px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+.fa-moon{
+    font-size: 20px;
+    color: var(--text-color-primary);
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+.fa-sun{
+    font-size: 20px;
+    color: var(--color-black);
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+.desplazar{
+    transform: translateX(80px) rotate(360deg);
 }
 .section-home{
     display: flex;
@@ -246,6 +278,8 @@ a{
     padding: 40px 40px;
     display: grid;
     background-color: var(--color-border);
+    border-top: 1px solid var(--text-color-primary);
+    border-bottom: 1px solid var(--text-color-primary);
 }
 .section__estudios-container{
     width: 100%;
@@ -327,6 +361,7 @@ a{
 .container-section-portfolio{
     padding: 40px 40px;
     width: 100%;
+    border-bottom: 1px solid var(--text-color-primary);
 }
 .title-section-portfolio{
     padding: 20px 0px;
@@ -346,6 +381,7 @@ a{
     background-color: var(--color-border);
     width: 100%;
     padding: 40px 40px;
+    border-bottom: 1px solid var(--text-color-primary);
 }
 .container-form{
     width: 100%;
@@ -370,7 +406,6 @@ input{
     margin-bottom: 20px;
     padding: 10px;
     border: none;
-    box-shadow: 1px 1px 1px 2px var(--color-border);
 }
 .txt-name{
     width: 50%;
@@ -389,7 +424,6 @@ footer{
     width: 100%;
     background-color: var(--color-black);
     padding: 40px 40px;
-    border-left: 1px solid var(--color-border);
 }
 .footer-contact{
     width: 100%;
@@ -454,8 +488,6 @@ footer{
     font-size: var(--font-size-sm);
 }
 
-
-
 .btn-sumit{
     border-radius:20px ;
     margin-top: 20px;
@@ -465,9 +497,7 @@ footer{
     font-size: var(--font-size-md);
 }
 
-
-
-
+/* Menu Responsivo */
 .nav-menu-responsive{
     position: fixed;
     top: 60px;
@@ -491,24 +521,35 @@ footer{
     margin-top: 20px;
     height: 80%;
 }
-
-/* Menu Responsivo */
-#btn-menu{
+.container-menu-mobile{
     width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-black);
+    z-index: 2;
+    display: none;
+}
+#btn-menu{
+    /* width: 100%; */
     display: none;
     position: fixed;
     color: var(--color-secundary);
     padding: 20px;
     left: 0;
-    background-color: var(--color-black);
     font-size: 20px;
-    z-index: 2;
+    z-index: 3;
 }
 
 /* Responsive Design */
 @media(max-width:836px) {
     .sidebar{
       display: none;  
+    }
+    .container-menu-mobile{
+        display: block;
+        
     }
     #btn-menu{
         display: block;
@@ -569,6 +610,7 @@ footer{
         color: var(--color-secundary);
         font-size: var(--font-size-lg);
     }
-    
-
+    .btntheme{
+        position:fixed;
+    }
 }
