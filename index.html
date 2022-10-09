@@ -1,42 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Portafolio</title>
-  </head>
 
-  <body>
-    <div class="container-pricinpal">
-      <div class="container">
-        <!-- SIDEBAR -->
-        <nav class="sidebar">
-          <div class="main-container">
-            <div class="perfil">
-              <div class="perfil-photo"></div>
-              <p class="name">Jefferson Valencia</p>
-              <p class="work-title">Me encanta la programación 💻</p>
-            </div>
-            <div class="enlaces" id="enlaces">
-              <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobremi">Sobre mí</a></li>
-                <li><a href="#estudios">Estudios</a></li>
-                <li><a href="#portafolio">Portafolio</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#footer">Footer</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        
-        <div class="container-menu-mobile">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Portafolio</title>
+</head>
+
+<body>
+  <div class="container-pricinpal">
+    <div class="container">
+      
+      <div class="container-menu-mobile">
         <i class="fa-solid fa-bars" id="btn-menu"></i>
       </div>
-        <div class="nav-menu-responsive active" id="nav-mobile">
-          <div class="container-nav-responsive">
+      <div class="nav-menu-responsive active" id="nav-mobile">
+        <div class="container-nav-responsive">
           <div class="perfil-photo"></div>
           <div class="enlaces" id="enlaces">
             <ul>
@@ -51,320 +32,154 @@
         </div>
       </div>
 
-        <!-- SECTION CONTAINER PRINCIPAL -->
-        <div class="section-container">
-          <!-- SECTION CONTAINER INICIO -->
-          <section class="encabezado home-area" id="inicio">
-            <div class="btntheme">
-              <i class="fa-solid fa-sun"></i>
+      <!-- SECTION CONTAINER PRINCIPAL -->
+      <div class="section-container">
+        <!-- SECTION CONTAINER INICIO -->
+        <section class="encabezado home-area" id="inicio">
+          <div class="section-home">
+            <div class="title-name">
+              <p class="name">
+                Jefferson <small class="color-name">Valencia</small>
+              </p>
+              <p class="work-description">
+                I'm a <span class="typed"></span>
+              </p>
             </div>
-            <div class="section-home">
-              <div class="title-name">
-                <img class="logo" src="img/logo2.svg" alt="" />
-                <p class="name">
-                  Jefferson <small class="color-name">Valencia</small>
-                </p>
-                <p class="work-description">
-                  I'm a <span class="typed"></span>
-                </p>
-              </div>
-            </div>
-          </section>
-          <!-- SECTION SOBRE MI -->
-          <section class="section-about-container">
-            <div class="encabezado section-about-title" id="sobremi">
-              <h2>Sobre mí</h2>
-              <p>Conóceme</p>
-            </div>
-            <div class="container-about">
-              <div class="profile-about-photo">
-                <img
-                  src="img/80290606_2688262541241911_4132282224114401280_n.jpg"
-                  alt="" />
-              </div>
-              <div class="profile-about-description">
-                <div class="about-description">
-                  <h3>Quién soy?</h3>
-                  <p>Soy Jefferson Valencia, desarrollador web</p>
-                  <p>
-                    Soy un estudiante de la carrera de ingenería de sistemas,
-                    durante el trayecto de mi carrera universitaria me he
-                    sentido atraido por los diferentes lenguajes de
-                    programación, con el objetivo de lograr ser un desarrollador
-                    fullstack.
-                  </p>
-                </div>
-                <div class="data">
-                  <p>Nombre: <small>Jefferson</small></p>
-                  <p>Edad : <small>25</small></p>
-                  <p>Email : <small>jeffersonpierov@gmail.com</small></p>
-                  <p>Pais : <small> Perú</small></p>
-                </div>
-
-                <div class="btn-info">
-                  <button type="submit" class="btn btn-cv">Download CV</button>
-                </div>
-              </div>
-              <!--Fin Profile-->
-            </div>
-          </section>
-
-          <!-- SECTION ESTUDIOS -->
-          <section class="container-section-estudios">
-            <!-- Section Title -->
-            <div class="encabezado section__estudios_title" id="estudios">
-              <h2>Mis Estudios</h2>
-              <p>Cursos</p>
-            </div>
-            <!-- Section card Container -->
-            <div class="section__estudios-container">
-              <div class="scene scene--card">
-                <div class="card">
-                  <div class="card__face card__face--front">
-                    <i class="icons fa-brands fa-css3-alt"></i>
-                  </div>
-                  <div class="card__face card__face--back">
-                    <ul>
-                      <li><a href="">Curso de Css Grid Básico</a></li>
-                      <li>
-                        <a href="">Curso Práctico de Maquetación en Css</a>
-                      </li>
-                      <li>
-                        <a href="">Curso Profesional de CSS Grid Layout</a>
-                      </li>
-                      <li>
-                        <a href=""
-                          >Curso de Diseño Web con CSS Grid y Flexbox</a
-                        >
-                      </li>
-                    </ul>
-                    <p>Cursos llevados en Platzi 💚</p>
-                  </div>
-                </div>
-              </div>
-              <div class="scene scene--card">
-                <div class="card">
-                  <div class="card__face card__face--front">
-                    <i class="icons fa-brands fa-html5"></i>
-                  </div>
-                  <div class="card__face card__face--back">
-                    <ul>
-                      <li><a href="">Curso de Css Grid Básico</a></li>
-                      <li>
-                        <a href="">Curso Práctico de Maquetación en Css</a>
-                      </li>
-                      <li>
-                        <a href="">Curso Profesional de CSS Grid Layout</a>
-                      </li>
-                      <li>
-                        <a href=""
-                          >Curso de Diseño Web con CSS Grid y Flexbox</a
-                        >
-                      </li>
-                    </ul>
-                    <p>Cursos llevados en Platzi 💚</p>
-                  </div>
-                </div>
-              </div>
-              <div class="scene scene--card">
-                <div class="card">
-                  <div class="card__face card__face--front">
-                    <i class="icons fa-brands fa-js"></i>
-                  </div>
-                  <div class="card__face card__face--back">
-                    <ul>
-                      <li><a href="">Curso de Css Grid Básico</a></li>
-                      <li>
-                        <a href="">Curso Práctico de Maquetación en Css</a>
-                      </li>
-                      <li>
-                        <a href="">Curso Profesional de CSS Grid Layout</a>
-                      </li>
-                      <li>
-                        <a href=""
-                          >Curso de Diseño Web con CSS Grid y Flexbox</a
-                        >
-                      </li>
-                    </ul>
-                    <p>Cursos llevados en Platzi 💚</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- SECTION PORTFOLIO -->
-          <section class="container-section-portfolio" >
-            <div class=" encabezado title-section-portfolio" id="portafolio">
-              <h2>Portafolio</h2>
-              <p>Mostrando algunos de mis proyectos</p>
-            </div>
-            <div class="portfolio-project">
-              <div class="card-container">
-
-                  <div class="scene scene--card">
-                    <div class="card">
-                      <div class="card__face card__face--front">
-                        <h2>Cupon de Descuento</h2>
-                      </div>
-                      <div class="card__face card__face--back">
-                        <a href="https://jefry22.github.io/Cupons/">
-                        <img class="img_portfolio" src="img/Captura de pantalla (644).png" alt="">
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="scene scene--card">
-                    <div class="card">
-                      <div class="card__face card__face--front">
-                        <h2>Capacidad de Endeudamiento</h2>
-                      </div>
-                      <div class="card__face card__face--back">
-                        <a href="https://jefry22.github.io/Capacidad-Endeudamiento/">
-                        <img class="img_portfolio" src="img/Captura de pantalla (645).png" alt="">
-                      </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="scene scene--card">
-                    <div class="card">
-                      <div class="card__face card__face--front">
-                        <i class="icons fa-brands fa-css3-alt"></i>
-                      </div>
-                      <div class="card__face card__face--back">
-                        <ul>
-                          <li><a href="">Curso de Css Grid Básico</a></li>
-                          <li>
-                            <a href="">Curso Práctico de Maquetación en Css</a>
-                          </li>
-                          <li>
-                            <a href="">Curso Profesional de CSS Grid Layout</a>
-                          </li>
-                          <li>
-                            <a href=""
-                              >Curso de Diseño Web con CSS Grid y Flexbox</a
-                            >
-                          </li>
-                        </ul>
-                        <p>Cursos llevados en Platzi 💚</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="scene scene--card">
-                    <div class="card">
-                      <div class="card__face card__face--front">
-                        <i class="icons fa-brands fa-css3-alt"></i>
-                      </div>
-                      <div class="card__face card__face--back">
-                        <ul>
-                          <li><a href="">Curso de Css Grid Básico</a></li>
-                          <li>
-                            <a href="">Curso Práctico de Maquetación en Css</a>
-                          </li>
-                          <li>
-                            <a href="">Curso Profesional de CSS Grid Layout</a>
-                          </li>
-                          <li>
-                            <a href=""
-                              >Curso de Diseño Web con CSS Grid y Flexbox</a
-                            >
-                          </li>
-                        </ul>
-                        <p>Cursos llevados en Platzi 💚</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="scene scene--card">
-                    <div class="card">
-                      <div class="card__face card__face--front">
-                        <i class="icons fa-brands fa-css3-alt"></i>
-                      </div>
-                      <div class="card__face card__face--back">
-                        <ul>
-                          <li><a href="">Curso de Css Grid Básico</a></li>
-                          <li>
-                            <a href="">Curso Práctico de Maquetación en Css</a>
-                          </li>
-                          <li>
-                            <a href="">Curso Profesional de CSS Grid Layout</a>
-                          </li>
-                          <li>
-                            <a href=""
-                              >Curso de Diseño Web con CSS Grid y Flexbox</a
-                            >
-                          </li>
-                        </ul>
-                        <p>Cursos llevados en Platzi 💚</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="scene scene--card">
-                    <div class="card">
-                      <div class="card__face card__face--front">
-                        <i class="icons fa-brands fa-css3-alt"></i>
-                      </div>
-                      <div class="card__face card__face--back">
-                        <ul>
-                          <li><a href="">Curso de Css Grid Básico</a></li>
-                          <li>
-                            <a href="">Curso Práctico de Maquetación en Css</a>
-                          </li>
-                          <li>
-                            <a href="">Curso Profesional de CSS Grid Layout</a>
-                          </li>
-                          <li>
-                            <a href=""
-                              >Curso de Diseño Web con CSS Grid y Flexbox</a
-                            >
-                          </li>
-                        </ul>
-                        <p>Cursos llevados en Platzi 💚</p>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- SECTION CONTACT -->
-          <section class="container-section-contact">
-            <div class=" encabezado section-title-contact" id="contacto">
-            <h2>Contácteme</h2>
-            <p>Sientete libre en contactarme en cualquier momento</p>
           </div>
-            <div class="container-form">
-              <form action="" class="form">
-                <input type="text" placeholder="Name" class="txt-name">
-                <input type="email" placeholder="Email" class="txt-email">
-                <input type="text" placeholder="subject" class="txt-subject">
-                <textarea name="Message" id="" cols="40" rows="10"></textarea>
-                <input class="btn-sumit" type="submit" value="Enviar">
-              </form>
-            </div>
-          </section>
+        </section>
+        <!-- SECTION SOBRE MI -->
+        <section class="section-about-container">
+          <div class="section-title section-about-title">
+            <h2>Sobre mí</h2>
+          </div>
+          <div class="container-about">
+            <div class="profile-about-photo">
 
-          <!--SECTION FOOTER  -->
-          <footer>
-            <div class=" encabezado footer-contact" id="footer">
-              <div class="btnf ubicacion">
+              <img src="img/80290606_2688262541241911_4132282224114401280_n.jpg" alt="" />
+            </div>
+            <div class="profile-about-description">
+              <div class="about-description">
+                <h3>Quién soy?</h3>
+                <!-- <p>Soy Jefferson Valencia, desarrollador web</p> -->
+                <p>
+                  Soy un estudiante de la carrera de ingenería de sistemas,
+                  durante el trayecto de mi carrera universitaria me he
+                  sentido atraido por los diferentes lenguajes de
+                  programación, con el objetivo de lograr ser un desarrollador
+                  fullstack.
+                </p>
+              </div>
+              <div class="data">
+                <p>Nombre: <small>Jefferson</small></p>
+                <p>Edad : <small>25</small></p>
+                <p>Email : <small>jeffersonpierov@gmail.com</small></p>
+                <p>Pais : <small> Perú</small></p>
+              </div>
+
+              <div class="btn-info">
+                <button type="submit" class="btn btn-cv ov-btn-slide-top">Download CV</button>
+              </div>
+            </div>
+            <!--Fin Profile-->
+          </div>
+        </section>
+
+        <!-- SECTION ESTUDIOS -->
+        <section class="container-section-estudios">
+          <div class="section-title section-estudios-title">
+            <h2>Skillset</h2>
+          </div>
+          <div class="container-card container-card-estudios">
+            <div class="card">
+              <div class="info">
+                <p>CSS3</p>
+              </div>
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <div class="card">
+              <div class="info">
+                <p>HTML5</p>
+              </div>
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="card">
+              <div class="info">
+                <p>JAVASCRIPT</p>
+              </div>
+              <i class="fa-brands fa-square-js"></i>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION PORTFOLIO -->
+        <section class="container-section-portfolio">
+          <div class="section-title section-title-portfolio">
+            <h2>Mis Proyectos</h2>
+          </div>
+
+          <div class="container-card-portfolio">
+              <div class="card-portfolio">
+                <div class="bg-img" style="background-image: url(img/Captura\ de\ pantalla\ \(644\).png);">
+                  <div class="content">
+                    <p>Cupones de Descuentos</p>
+                    <a href="https://jefry22.github.io/Cupons/" class="btn-proyecto">
+                      <i class="fa-regular fa-eye"></i>
+                      Ver Proyecto</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-portfolio">
+                <div class="bg-img" style="background-image:url(img/Captura\ de\ pantalla\ \(645\).png);">
+                  <div class="content">
+                    <p>Capacidad De Endeudamiento</p>
+                    <a href="https://jefry22.github.io/Capacidad-Endeudamiento/" class="btn-proyecto">
+                      <i class="fa-regular fa-eye"></i>
+                      Ver Proyecto</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-portfolio">
+                <div class="bg-img" style="background-image:url(img/Captura\ de\ pantalla\ \(665\).png) ;">
+                  <div class="content">
+                    <p>Carrito de Compra</p>
+                    <a href="https://jefry22.github.io/Nike-shoppingCart" class="btn-proyecto">
+                      <i class="fa-regular fa-eye"></i>
+                      Ver Proyecto</a>
+                  </div>
+                </div>
+              </div>
+              
+              
+          </div>
+        </section>
+
+        <!-- SECTION CONTACT -->
+        <section class="container-section-contact">
+          <div class="section-title section-contact">
+            <h2>Contácteme</h2>
+          </div>
+          <div class="container-form">
+            <form action="" class="form">
+              <input type="text" placeholder="Nombre" class="txt-name">
+              <input type="email" placeholder="Correo Electronico" class="txt-email">
+              <textarea name="Message" id="" cols="20" rows="8"></textarea>
+              <button type="submit" class="btn btn-cv ov-btn-slide-top">Enviar</button>
+            </form>
+          </div>
+        </section>
+
+        <!--SECTION FOOTER  -->
+        <footer>
+          <div class=" encabezado footer-contact" id="footer">
+            <div class="btnf ubicacion">
               <i class="fa-solid fa-map"></i>
               <p>Perú,Lima-Ate</p>
-              </div>
-              <div class="btnf movil">
-              <i class="fa-solid fa-phone">
-              </i>
-              <p>968923498</p>
-              </div>
-              <div class="btnf fgmail">
+            </div>
+            <div class="btnf fgmail">
               <i class="fa-sharp fa-solid fa-circle-info"></i>
               <p>jeffersonpierov@gmail.com</p>
-              </div>
             </div>
+          </div>
 
           <div class="footer-redes">
             <div class="container-redes">
@@ -379,18 +194,18 @@
               <p>Copyright © 2022 Jefferson Valencia Yataco</p>
             </div>
           </div>
-          </footer>
-
-        </div>
+        </footer>
 
       </div>
-    </div>
-  </body>
 
-  <script src="lib/typed.js"></script>
-  <script src="lib/anime.min.js"></script>
-  <script src="js/main.js"></script>
-  <script
-    src="https://kit.fontawesome.com/dfddf3a1f7.js"
-    crossorigin="anonymous"></script>
+    </div>
+  </div>
+</body>
+<script src="lib/scrollreveal.js"></script>
+<script src="lib/typed.js"></script>
+<script src="lib/anime.min.js"></script>
+<script src="js/main.js"></script>
+
+<script src="https://kit.fontawesome.com/dfddf3a1f7.js" crossorigin="anonymous"></script>
+
 </html>
