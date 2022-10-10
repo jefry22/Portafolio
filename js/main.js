@@ -63,3 +63,18 @@ btn_correo.addEventListener('click',(e)=>{
   form.reset();
 });
 
+
+const btn_cv = document.getElementById('btn-cv');
+
+const dowload = (filename)=>{
+  let element = document.createElement('a');
+  element.setAttribute('href','Cv.pdf');
+  element.setAttribute('dowload',filename);
+  document.body.appendChild(element);
+  element.click();
+}
+
+btn_cv.addEventListener('click',function(){
+  let filename = "cv.pdf";
+  dowload(filename);
+},false);
