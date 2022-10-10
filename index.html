@@ -159,11 +159,11 @@
             <h2>Contácteme</h2>
           </div>
           <div class="container-form">
-            <form action="" class="form">
-              <input type="text" placeholder="Nombre" class="txt-name">
-              <input type="email" placeholder="Correo Electronico" class="txt-email">
-              <textarea name="Message" id="" cols="20" rows="8"></textarea>
-              <button type="submit" class="btn btn-cv ov-btn-slide-top">Enviar</button>
+            <form action="correo.php" class="form" method="POST">
+              <input type="text" placeholder="Nombre" class="txt-name" name="nombre" required>
+              <input type="email" placeholder="Correo Electronico" class="txt-email" name="email" required>
+              <textarea name="mensaje" id="" cols="20" required rows="8"></textarea>
+              <input type="submit" class="btn btn-cv ov-btn-slide-top"></input>
             </form>
           </div>
         </section>
