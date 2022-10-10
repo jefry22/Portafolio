@@ -195,9 +195,13 @@ a {
     padding: 10px;
     cursor: pointer;
     margin-top: 20px;
-    width: 150px;
+    width: 200px;
     font-size: var(--font-size-md);
     border-radius: 80px;
+}
+.fa-file-arrow-down{
+    font-size: var(--font-size-md);
+    margin-right: 20px;
 }
 
 .ov-btn-slide-top {
@@ -470,6 +474,10 @@ input:focus{
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
 }
+.fa-right-from-bracket{
+    font-size: var(--font-size-md);
+    margin-right: 20px;
+}
 /* Section Footer */
 footer {
     width: 100%;
@@ -556,15 +564,12 @@ footer {
     font-size: var(--font-size-sm);
 }
 
-
-
 /* Menu Responsivo */
 .nav-menu-responsive {
     position: fixed;
     top: 60px;
     left: 0;
-    height: 100vh;
-    background-color: var(--color-bg-primary);
+    height: 80vh;
     width: 80%;
     z-index: 1;
 
@@ -572,39 +577,48 @@ footer {
 
 .container-nav-responsive {
     width: 100%;
+    height: 100%;
+    background-color: var(--color-bg-secundary);
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
+    animation: mover 0.7s normal;
 }
-
-.nav-menu-responsive .enlaces .perfil-photo {
-    padding: 0;
+@keyframes mover {
+    0%{
+        transform: translateX(-80px);    
+    }
+    
+    100%{
+        transform: translateX(0px);
+    }
 }
-
 .nav-menu-responsive>.enlaces ul {
     margin-top: 20px;
     height: 80%;
+    
 }
-
+.enlaces ul li{
+    padding: 20px;
+}
+.enlaces ul li>a{
+    font-size: var(--font-size-md);
+    color: var(--text-color-primary);
+} 
 .container-menu-mobile {
     width: 100%;
     height: 60px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: var(--text-color-primary);
-    box-shadow: 2px 1px 1px 1px #59595969;
+    background: var(--color-bg-secundary);
     z-index: 2;
+    border-bottom: 2px solid var(--color-secundary);
     display: none;
 }
 
 #btn-menu {
-    /* width: 100%; */
     display: none;
-    position: fixed;
-    color: var(--color-secundary);
+    color: var(--color-bg-primary);
     padding: 20px;
-    left: 0;
     font-size: 20px;
     z-index: 3;
 }
