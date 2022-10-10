@@ -6,29 +6,29 @@ const div_mobile = document.querySelector('#nav-mobile');
 
 window.sr = ScrollReveal();
 sr.reveal('.container-about', {
-  duration: 4000,
+  duration: 3000,
   origin: 'left',
-  distance: '50px',
+  distance: '30px',
 });
 sr.reveal('.section-title', {
-  duration: 4000,
+  duration: 3000,
   origin: 'right',
-  distance: '50px',
+  distance: '30px',
 });
-sr.reveal('.section-title', {
-  duration: 4000,
+sr.reveal('.section-title-portfolio', {
+  duration: 5000,
   origin: 'right',
-  distance: '50px',
-});
-sr.reveal('.container-card-estudios', {
-  duration: 4000,
-  origin: 'right',
-  distance: '50px',
+  distance: '30px',
 });
 sr.reveal('.container-card-portfolio', {
-  duration: 4000,
+  duration: 5000,
   origin: 'right',
-  distance: '50px',
+  distance: '30px',
+});
+sr.reveal('.container-card-estudios', {
+  duration: 5000,
+  origin: 'right',
+  distance: '30px',
 });
 
 
