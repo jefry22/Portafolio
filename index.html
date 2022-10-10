@@ -159,11 +159,11 @@
             <h2>Contácteme</h2>
           </div>
           <div class="container-form">
-            <form action="correo.php" class="form" method="POST">
-              <input type="text" placeholder="Nombre" class="txt-name" name="nombre" required>
-              <input type="email" placeholder="Correo Electronico" class="txt-email" name="email" required>
-              <textarea name="mensaje" id="" cols="20" required rows="8"></textarea>
-              <input type="submit" class="btn btn-cv ov-btn-slide-top"></input>
+            <form  id="form">
+              <input type="text" placeholder="Nombre" class="txt-name" name="from_name" id="from_name" required>
+              <input type="email" placeholder="Correo Electronico" class="txt-email"  name="email_id" id="email_id" required>
+              <textarea  name="message" id="message" cols="20" required rows="8"></textarea>
+              <button type="submit" class="btn-correo ov-btn-slide-top" id="btn-enviar">Enviar Mensaje</button>
             </form>
           </div>
         </section>
@@ -201,6 +201,12 @@
     </div>
   </div>
 </body>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('HbFdISIaNDNTM0PI-')
+</script>
 <script src="lib/scrollreveal.js"></script>
 <script src="lib/typed.js"></script>
 <script src="lib/anime.min.js"></script>

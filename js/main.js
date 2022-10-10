@@ -43,9 +43,23 @@ const typed = new Typed('.typed',{
   loop:true,
 });
 
-// const form = document.querySelector('.form');
-
-// form.addEventListener('submit',(e)=>{
-//   e.preventDefault();
+let btn_correo = document.getElementById('btn-enviar');
+const form =document.getElementById('form');
+ 
+btn_correo.addEventListener('click',(e)=>{
+  e.preventDefault();
+  btn_correo.value = "Enviando...";
+  const serviceID = 'default_service';
+  const templateID = 'template_e5vh609';
   
-// })
+  emailjs.sendForm(serviceID,templateID,form)
+  .then(()=>{
+    btn_correo.value = 'Enviar Correo Electronico';
+    alert('Enviado!');
+  },(err)=>{
+    btn_correo.value = 'Email no enviado';
+    alert(JSON.stringify(err));
+  });
+  form.reset();
+});
+
