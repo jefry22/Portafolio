@@ -298,7 +298,10 @@ a {
     font-size: var(--font-size-xl);
     color: var(--text-color-primary);
 }
-
+.icon-tailwind{
+    width: 80px;
+    filter: invert(0.8) sepia(8) hue-rotate(900deg);
+}
 /* CONTAINER PORTFOLIO */
 .container-section-portfolio {
     background-color: var(--color-bg-primary);
@@ -549,11 +552,11 @@ footer {
     background-color: rgb(242, 5, 21);
 }
 
-.container-redes>a:nth-child(5) {
+.container-redes>a:nth-child(4) {
     background-color: rgb(214, 5, 242);
 }
 
-.container-redes>a:nth-child(6) {
+.container-redes>a:nth-child(5) {
     background-color: rgb(9, 5, 242);
 }
 
