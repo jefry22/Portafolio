@@ -113,7 +113,7 @@ a {
     margin: 40px 0px;
     width: 80%;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     column-gap: 25px;
 }
 .section-about-title {
@@ -327,6 +327,9 @@ a {
     height: 320px;
     border-radius: 20px;
 }
+.subtitle-portfolio{
+    font-size: 12px;
+}
 .bg-img{
     width: 100%;
     border-radius: 20px;
@@ -337,6 +340,7 @@ a {
 }
 .content{
     width: 100%;
+    padding: 20px;
     border-radius: 20px;
     height: 100%;
     display: flex;
@@ -350,6 +354,11 @@ a {
     z-index: 100;
     font-weight: bold;
     color: var(--text-color-primary);
+}
+.title-portfolio{
+    font-size: 24px;
+    margin-bottom: 24px;
+    color: var(--color-bg-primary);
 }
 .btn-proyecto{
     color: var(--text-color-primary);
